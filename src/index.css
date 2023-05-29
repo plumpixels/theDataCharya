@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  img {
+    @apply w-full
+  }
+
+  .section {
+    @apply container mx-auto py-24 px-6 
+  }
+  .animate-slide:hover {
+    animation-play-state: paused;
+  }
+}
+::-webkit-scrollbar{
+    width: 0.5rem;
+    background: rgb(255, 255, 255);
+}
+::-webkit-scrollbar-thumb{
+    width: 100%;
+    background: rgb(49, 160, 162);
+    border-radius: 0.25rem;
+}
