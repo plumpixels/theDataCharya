@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import dev from "../../assets/data.png"
 
 const Signup = () => {
   const [email, setEmail] = useState("");
@@ -23,9 +24,9 @@ const Signup = () => {
   };
 
   return (
-    <div className="section">
-      <div className="flex justify-center items-center h-screen">
-        <form className="w-full max-w-sm" onSubmit={handleSubmit}>
+    <div className="signup-container overflow-hidden">
+      <div className="flex flex-col-reverse md:flex-row justify-center items-center h-screen overflow-y-hidden">
+        <form className="w-full md:w-1/2 max-w-sm mb-10 md:mb-0" onSubmit={handleSubmit}>
           <div className="mb-4">
             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
               Email:
@@ -54,15 +55,21 @@ const Signup = () => {
               required
             />
           </div>
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col md:flex-row">
             <button
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              className="w-full md:w-auto py-3 px-10 bg-Teal text-white rounded-lg text-sm font-bold transition duration-500 ease-in-out hover:border hover:border-solid hover:border-gray hover:bg-Solitude hover:text-black mb-2 md:mb-0 md:mr-2"
               type="submit"
             >
               Sign Up
             </button>
+            <button className="w-full md:w-auto py-3 px-10 font-bold border border-solid border-gray rounded-lg text-sm transition duration-500 ease-in-out hover:text-white hover:bg-Teal focus:outline-none focus:shadow-outline">
+              Login
+            </button>
           </div>
         </form>
+        <div className="md:w-1/2 transition duration-500 ease-in-out hover:scale-110">
+          <img src={dev} alt="" />
+        </div>
       </div>
     </div>
   );

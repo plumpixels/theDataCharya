@@ -25,3 +25,6 @@
     background: rgb(49, 160, 162);
     border-radius: 0.25rem;
 }
+.signup-container {
+  overflow: hidden;
+}

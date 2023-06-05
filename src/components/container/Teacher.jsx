@@ -1,7 +1,6 @@
 import React from "react";
 import teacher1 from "../../assets/teacher1.png";
 import teacher2 from "../../assets/teacher2.png";
-import dev from "../../assets/dev.jpg";
 import { accordions } from "../../Data";
 import Accordion from "./Accordion";
 import { motion } from "framer-motion";
