@@ -4,7 +4,13 @@ function App() {
 
   return (
   <div class="font-Poppins bg-Solitude">
-    <Signup />
+      <Navbar />
+      <Home />
+      <About />
+      <Courses />
+      <Teacher />
+      <Contact />
+      <Footer />
     </div>);
 }
 export default App;

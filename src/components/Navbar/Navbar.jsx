@@ -39,9 +39,9 @@ const Navbar = () => {
                 return <NavLink key={navLink.id} {...navLink} />;
               })}
             </div>
-          <motion.button className="py-3 px-6 font-bold text-base border border-solid rounded-lg border-gray" id="signup"
+          <motion.button className="py-2.5 px-6 font-bold text-base border border-solid rounded-lg border-gray" id="signup"
             whileHover={{scale: 1.1, boxShadow: "0px 0px 4px rgb(0,0,0)"}}>
-            Sign Up
+            Sign In
           </motion.button>
           {toggle && (
             <motion.div
