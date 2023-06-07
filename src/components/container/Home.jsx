@@ -51,14 +51,14 @@ const Home = () => {
         </div>
       </div>
       <div className="mt-32">
-        <p className="text-center text-xl">
+        <div className="text-center text-xl">
           <div className="font-bold">We collaborate with{" "}</div>
           <span className="text-Teal">
               <Typewriter 
                 options={{autoStart: true, loop: true }} 
                 onInit={(typewriter) => {typewriter.typeString("100+ leading universities").pauseFor(2000).deleteAll().typeString("100+ leading companies").start().pauseFor(2000); }} />
           </span>
-        </p>
+        </div>
         <motion.div
           variants={container}
           initial="hidden"
